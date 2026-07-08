@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Fetch Kobo records and build data/registry.json + data/registry.js.
 
+This version maps the internal Kobo/XLSForm field names returned by the API, e.g.:
+- ASSESSMENT_ID/assessment_title
+- REPORTER/enum_org
+- ASSESSMENT_ID/cluster_sector
+- GEO_COVERAGE/admin1_coverage
+
 Required env var:
   KOBO_API_TOKEN - Kobo API token stored as a GitHub Actions secret.
-
-Optional env vars:
-  KOBO_API_URL - Kobo API endpoint. Defaults to the Venezuela 2026 assessment registry endpoint.
 """
 import json, os, re, sys
 from datetime import datetime, timezone
@@ -14,6 +17,32 @@ from urllib.error import HTTPError, URLError
 
 KOBO_API_URL = os.getenv("KOBO_API_URL", "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json")
 TOKEN = os.getenv("KOBO_API_TOKEN")
+
+SECTOR_MAP = {
+    "inter_cluster": "Inter-Clúster",
+    "shelter_nfi": "Refugio y Artículos No Alimentarios (SNF)",
+    "erl": "Recuperación Temprana (ERL)",
+    "food_security": "Seguridad Alimentaria",
+    "health": "Salud",
+    "nutrition": "Nutrición",
+    "protection": "Protección",
+    "wash": "Agua, Saneamiento e Higiene (WASH)",
+    "education": "Educación",
+    "cccm": "Coordinación y Gestión de Campamentos (CCCM)",
+    "other": "Otro",
+}
+STATUS_MAP = {"completed": "Completado", "ongoing": "En curso", "planned": "Planificado"}
+FREQUENCY_MAP = {"single": "Evaluación única", "daily": "Diaria", "weekly": "Semanal", "monthly": "Mensual", "other": "Otra (especificar)"}
+GEO_LEVEL_MAP = {"admin1": "Estado", "admin2": "Municipio", "admin3": "Parroquia", "camp": "Campamento", "whole_eq_area": "Toda el área afectada"}
+ADMIN1_MAP = {
+    "VE01": "Distrito Capital",
+    "VE05": "Aragua",
+    "VE08": "Carabobo",
+    "VE11": "Falcón",
+    "VE15": "Miranda",
+    "VE22": "Yaracuy",
+    "VE24": "La Guaira",
+}
 
 if not TOKEN:
     print("ERROR: KOBO_API_TOKEN is not set. Add it as a GitHub Actions secret.", file=sys.stderr)
@@ -29,11 +58,13 @@ def parse_date(value):
     s = clean(value)
     if not s:
         return ""
-    # Handles YYYY-MM-DD and datetime strings; keeps date only.
     return s[:10]
 
-def truthy(value):
-    return str(value).strip().lower() in {"1", "1.0", "true", "sí", "si", "yes"}
+def split_tokens(value):
+    return [x.strip() for x in clean(value).split() if x.strip()]
+
+def map_list(value, mapping):
+    return [mapping.get(token, token) for token in split_tokens(value)]
 
 def get_records_from_response(payload):
     if isinstance(payload, dict) and isinstance(payload.get("results"), list):
@@ -62,56 +93,56 @@ def fetch_all(url):
         url = payload.get("next") if isinstance(payload, dict) else None
     return all_rows
 
-def key_starts(row, prefix):
-    return [k for k in row.keys() if k.startswith(prefix)]
+def attachment_for(row, question_xpath):
+    for att in row.get("_attachments", []) or []:
+        if att.get("question_xpath") == question_xpath and not att.get("is_deleted"):
+            return att
+    return None
 
 def transform(rows):
     records = []
     submission_dates = []
-    sector_prefix = "Clúster / Sector/"
-    admin1_prefix = "Cobertura Admin 1 (Estado)/"
-    admin2_prefix = "Cobertura Admin 2 (Municipio)/"
-    admin3_prefix = "Cobertura Admin 3 (Parroquia) Opcional/"
-
     for i, row in enumerate(rows):
-        sectors = [k.replace(sector_prefix, "").strip() for k in key_starts(row, sector_prefix) if truthy(row.get(k))]
-        admin1 = [k.replace(admin1_prefix, "").strip() for k in key_starts(row, admin1_prefix) if truthy(row.get(k))]
-        admin2 = []
-        for k in key_starts(row, admin2_prefix):
-            if truthy(row.get(k)):
-                val = k.replace(admin2_prefix, "").strip()
-                parts = [p.strip() for p in val.split(" - ", 1)]
-                admin2.append({"estado": parts[0] if len(parts) > 1 else "", "municipio": parts[-1]})
-        admin3 = [k.replace(admin3_prefix, "").strip() for k in key_starts(row, admin3_prefix) if truthy(row.get(k))]
+        sectors = map_list(row.get("ASSESSMENT_ID/cluster_sector"), SECTOR_MAP)
+        admin1 = map_list(row.get("GEO_COVERAGE/admin1_coverage"), ADMIN1_MAP)
+        admin2_codes = split_tokens(row.get("GEO_COVERAGE/admin2_detail"))
+        admin2 = [{"estado": ADMIN1_MAP.get(code[:4], ""), "municipio": code} for code in admin2_codes]
+        admin3_codes = split_tokens(row.get("GEO_COVERAGE/admin3_detail"))
+        admin3 = admin3_codes
         submission_date = parse_date(row.get("_submission_time"))
         if submission_date:
             submission_dates.append(submission_date)
 
+        report_attachment = attachment_for(row, "REPORT/report")
+        data_attachment = attachment_for(row, "ASSESSMENT_DATA/data") or attachment_for(row, "REPORT/data")
+        report_name = clean(row.get("REPORT/report")) or clean(report_attachment.get("media_file_basename") if report_attachment else "")
+        data_name = clean(row.get("ASSESSMENT_DATA/data")) or clean(data_attachment.get("media_file_basename") if data_attachment else "")
+
         records.append({
             "id": clean(row.get("_uuid")) or clean(row.get("_id")) or f"row-{i+1}",
             "indice": clean(row.get("_index")) or str(i+1),
-            "titulo": clean(row.get("Título de la evaluación")),
-            "organizacion": clean(row.get("Organización")),
-            "agencia_lider": clean(row.get("Agencia líder")) or clean(row.get("Organización")),
-            "organizaciones_participantes": clean(row.get("Organizaciones participantes")),
-            "estado_evaluacion": clean(row.get("Estado de la evaluación")),
-            "frecuencia": clean(row.get("Frecuencia de la evaluación")),
-            "nivel_cobertura": clean(row.get("Nivel geográfico de cobertura")),
-            "fecha_evaluacion": parse_date(row.get("Fecha de la evaluación")),
-            "fecha_fin_estimada": parse_date(row.get("Fecha de finalización estimada") or row.get("Fecha de finalización / prevista")),
+            "titulo": clean(row.get("ASSESSMENT_ID/assessment_title")),
+            "organizacion": clean(row.get("REPORTER/enum_org")),
+            "agencia_lider": clean(row.get("DATES_ORGS/lead_agency")) or clean(row.get("REPORTER/enum_org")),
+            "organizaciones_participantes": clean(row.get("DATES_ORGS/participating_orgs")),
+            "estado_evaluacion": STATUS_MAP.get(clean(row.get("ASSESSMENT_ID/assessment_status")), clean(row.get("ASSESSMENT_ID/assessment_status"))),
+            "frecuencia": FREQUENCY_MAP.get(clean(row.get("ASSESSMENT_ID/assessment_frequency")), clean(row.get("ASSESSMENT_ID/assessment_frequency"))),
+            "nivel_cobertura": GEO_LEVEL_MAP.get(clean(row.get("GEO_COVERAGE/geo_level")), clean(row.get("GEO_COVERAGE/geo_level"))),
+            "fecha_evaluacion": parse_date(row.get("DATES_ORGS/start_date")),
+            "fecha_fin_estimada": parse_date(row.get("DATES_ORGS/end_date")),
             "fecha_envio": submission_date,
             "sectores": sectors,
             "admin1": admin1,
             "admin2": admin2,
             "admin3": admin3,
-            "detalle_cobertura": clean(row.get("Detalles adicionales de cobertura")),
-            "tiene_datos": bool(clean(row.get("Datos de la evaluación")) or clean(row.get("Datos de la evaluación_URL"))),
-            "url_datos": clean(row.get("Datos de la evaluación_URL")),
-            "tiene_reporte": bool(clean(row.get("Reporte de la evaluación")) or clean(row.get("Reporte de la evaluación_URL"))),
-            "url_reporte": clean(row.get("Reporte de la evaluación_URL")),
-            "nombre_reporte": clean(row.get("Reporte de la evaluación")),
-            "metodologia": clean(row.get("Metodología de la evaluación")) or clean(row.get("Si seleccionó Otro, especifique la metodología")),
-            "notas": clean(row.get("Notas adicionales")),
+            "detalle_cobertura": clean(row.get("GEO_COVERAGE/geo_details")),
+            "tiene_datos": bool(data_name or (data_attachment and data_attachment.get("download_url"))),
+            "url_datos": clean(data_attachment.get("download_url") if data_attachment else ""),
+            "tiene_reporte": bool(report_name or (report_attachment and report_attachment.get("download_url"))),
+            "url_reporte": clean(report_attachment.get("download_url") if report_attachment else ""),
+            "nombre_reporte": report_name,
+            "metodologia": clean(row.get("REPORT/methodology")) or clean(row.get("REPORT/other_methodology")),
+            "notas": clean(row.get("REPORT/additional_notes")),
         })
 
     return {
@@ -137,7 +168,11 @@ def main():
         f.write("window.REGISTRY_PAYLOAD = ")
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write(";\n")
-    print(f"Wrote {len(payload['records'])} records. Latest published: {payload['metadata']['ultimo_registro_publicado']}")
+    # Verify that mapping produced useful data.
+    non_empty_titles = sum(1 for r in payload["records"] if r.get("titulo"))
+    print(f"Wrote {len(payload['records'])} records. Non-empty titles: {non_empty_titles}. Latest published: {payload['metadata']['ultimo_registro_publicado']}")
+    if payload["records"] and non_empty_titles == 0:
+        raise SystemExit("ERROR: Kobo records were fetched, but title mapping produced zero non-empty titles.")
 
 if __name__ == "__main__":
     main()
