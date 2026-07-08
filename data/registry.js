@@ -5,7 +5,7 @@ window.REGISTRY_PAYLOAD = {
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
     "ultimo_registro_publicado": "2026-07-08",
-    "generado": "2026-07-08T20:33:59Z",
+    "generado": "2026-07-08T21:26:57Z",
     "registros": 20
   },
   "records": [
@@ -97,7 +97,7 @@ window.REGISTRY_PAYLOAD = {
       "notas": ""
     },
     {
-      "id": "5ebca35c-bc78-47f9-9d2f-36d40c762875",
+      "id": "b681bf1c-904b-46e4-9c4d-8d54ec8e0dec",
       "indice": "3",
       "titulo": "Rapid Needs Assessment",
       "organizacion": "International Medical Corps",
@@ -118,9 +118,9 @@ window.REGISTRY_PAYLOAD = {
       "detalle_cobertura": "Municipio Vargas",
       "tiene_datos": false,
       "url_datos": "",
-      "tiene_reporte": true,
-      "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1375521/attachments/attJDUgjvzmsRsu4BP2oJQDz/",
-      "nombre_reporte": "NO COMPARTIR FUERA DE OCHA_Needs Assessment_Venezuela Earthquakes Report-FINAL-20_47_37.pdf",
+      "tiene_reporte": false,
+      "url_reporte": "",
+      "nombre_reporte": "",
       "metodologia": "",
       "notas": "Document for OCHA data use only, not to be shared outside OCHA."
     },
@@ -507,10 +507,10 @@ window.REGISTRY_PAYLOAD = {
       "notas": "Visitas de observación e identificación de líderes comunitarios y personas encargado de albergues . Desde la emergencia hemos tenido despliegue y apoyo con hidratación en la mayoría de las zonas afectadas"
     },
     {
-      "id": "0c3d5846-f5ad-40bb-ac6c-4c5b0c4a3fef",
+      "id": "c8bfb4bb-ce26-41d5-b801-01b717e93a4c",
       "indice": "9",
       "titulo": "Evalaucipon Rápida de necesidades con enfoque inclusivo",
-      "organizacion": "Humanity and Inclusión",
+      "organizacion": "Humanity & Inclusion",
       "agencia_lider": "Humanity and Inclusion",
       "organizaciones_participantes": "Primera Urgencia Internacional PUI ACTED",
       "estado_evaluacion": "Completado",
@@ -541,10 +541,10 @@ window.REGISTRY_PAYLOAD = {
       "notas": "Primer día posterior a la emergencia por el terremoto, observamos complicaciones en las vías principales de acceso, dado la cantidad de motorizados, que estaban asistiendo con insumos principalmente agua y alimentos. El primer día se utilizo la herramienta de entrevista a actores claves y observación, las personas estaban muy conmocionadas."
     },
     {
-      "id": "6c35a154-d762-4f9c-a4d6-62c182bdcf6c",
+      "id": "13038643-ca38-4fd0-8fdd-78635f49e798",
       "indice": "10",
       "titulo": "Evaluación rápida de necesiades con enfoque inclusivo",
-      "organizacion": "Humanity and Inclusion",
+      "organizacion": "Humanity & Inclusion",
       "agencia_lider": "Humanity and Inclusion",
       "organizaciones_participantes": "N/A",
       "estado_evaluacion": "Completado",
@@ -573,10 +573,10 @@ window.REGISTRY_PAYLOAD = {
       "notas": "Se observa que el acceso ha sido controlado por las fuerzas policiales del estado, exigiendo un salvoconducto para el ingreso, ya el hospital Central José María Vargas, no estaba prestando atenciones, dado que estaban gestionando el tratamiento de los cuerpos en su morgue. Fue posible realizar entrevistas semiestructuradas, fue necesario aplicar PAP a los entrevistados"
     },
     {
-      "id": "32d9d010-4ca9-4839-91d5-a6402f4e7d0c",
+      "id": "f06d8780-48b7-465d-b4fd-8a5d23bf8a7c",
       "indice": "11",
       "titulo": "Evaluación de necesidades rápida con enfoque inclusivo",
-      "organizacion": "Humanity and Inclusion",
+      "organizacion": "Humanity & Inclusion",
       "agencia_lider": "Humanity andi Inclusion",
       "organizaciones_participantes": "ACTED",
       "estado_evaluacion": "En curso",
