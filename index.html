@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OCHA | Registro de Evaluaciones - Terremotos Venezuela 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="brand-wordmark">OCHA</div>
+    <div class="hero-copy">
+      <p class="eyebrow">Respuesta humanitaria | Venezuela</p>
+      <h1>Registro de Evaluaciones</h1>
+      <p class="subtitle">Terremotos en Venezuela 2026 · seguimiento de evaluaciones, sectores, cobertura geográfica y documentos asociados.</p>
+    </div>
+    <div class="update-card">
+      <span>Último registro publicado</span>
+      <strong id="lastUpdate">—</strong>
+      <small id="sourceLabel">Registro de evaluaciones en Kobo.</small>
+    </div>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="Filtros del tablero">
+      <label class="wide">Buscar
+        <input id="searchInput" type="search" placeholder="Buscar por título, organización, sector, estado, municipio..." />
+      </label>
+      <label>Estado de evaluación
+        <select id="statusFilter"><option value="">Todos</option></select>
+      </label>
+      <label>Sector / Clúster
+        <select id="sectorFilter"><option value="">Todos</option></select>
+      </label>
+      <label>Estado
+        <select id="admin1Filter"><option value="">Todos</option></select>
+      </label>
+      <label>Organización
+        <select id="orgFilter"><option value="">Todas</option></select>
+      </label>
+      <button id="resetBtn" type="button">Limpiar filtros</button>
+    </section>
+
+    <section class="kpi-grid" aria-label="Indicadores principales">
+      <article class="kpi primary"><span>Evaluaciones</span><strong id="kpiTotal">0</strong><em>registros filtrados</em></article>
+      <article class="kpi"><span>Completadas</span><strong id="kpiCompleted">0</strong><em>con estado completado</em></article>
+      <article class="kpi"><span>En curso</span><strong id="kpiProgress">0</strong><em>seguimiento activo</em></article>
+      <article class="kpi"><span>Organizaciones</span><strong id="kpiOrgs">0</strong><em>reportantes</em></article>
+      <article class="kpi"><span>Sectores</span><strong id="kpiSectors">0</strong><em>clusters cubiertos</em></article>
+      <article class="kpi"><span>Estados</span><strong id="kpiAdmin1">0</strong><em>cubiertos</em></article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel compact"><div class="panel-header"><h2>Estado de evaluación</h2><span id="statusSummary">—</span></div><canvas id="statusChart"></canvas></article>
+      <article class="panel"><div class="panel-header"><h2>Cobertura por sector</h2><span>Top categorías</span></div><canvas id="sectorChart"></canvas></article>
+      <article class="panel"><div class="panel-header"><h2>Cobertura por estado</h2><span>Estado</span></div><canvas id="geoChart"></canvas></article>
+      <article class="panel"><div class="panel-header"><h2>Organizaciones</h2><span>Top 10</span></div><canvas id="orgChart"></canvas></article>
+    </section>
+
+    <section class="panel full">
+      <div class="panel-header"><h2>Detalle del assessment registry</h2><div class="table-actions"><span id="rowCount">0 registros</span><button id="exportBtn" type="button">Exportar CSV filtrado</button></div></div>
+      <div class="table-wrap"><table id="registryTable"><thead><tr><th data-sort="titulo">Título</th><th data-sort="organizacion">Organización</th><th data-sort="estado_evaluacion">Estado</th><th data-sort="fecha_evaluacion">Fecha</th><th>Sectores</th><th>Estado</th><th>Reporte</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </main>
+
+  <script src="data/registry.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
