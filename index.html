@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="floating-cta" href="https://kobo.unocha.org/x/aTX9v7VgZdAbYfKozHV4dN" target="_blank" rel="noopener">+ Registrar evaluación</a>
+
   <header class="hero">
     <div class="brand-wordmark">OCHA</div>
     <div class="hero-copy">
@@ -14,14 +16,25 @@
       <h1>Registro de Evaluaciones</h1>
       <p class="subtitle">Terremotos en Venezuela 2026 · seguimiento de evaluaciones, sectores, cobertura geográfica y documentos asociados.</p>
     </div>
-    <div class="update-card">
-      <span>Último registro publicado</span>
-      <strong id="lastUpdate">—</strong>
-      <small id="sourceLabel">Registro de evaluaciones en Kobo.</small>
+    <div class="header-actions">
+      <div class="update-card">
+        <span>Último registro publicado</span>
+        <strong id="lastUpdate">—</strong>
+        <small id="sourceLabel">Registro de evaluaciones en Kobo.</small>
+      </div>
+      <a class="primary-cta" href="https://kobo.unocha.org/x/aTX9v7VgZdAbYfKozHV4dN" target="_blank" rel="noopener">Registrar una evaluación</a>
     </div>
   </header>
 
   <main>
+    <section class="cta-strip" aria-label="Llamado a registrar evaluaciones">
+      <div>
+        <strong>¿Su organización está realizando o planificando una evaluación?</strong>
+        <p>Registre nuevas evaluaciones, actualice evaluaciones en curso y comparta informes para apoyar la coordinación humanitaria.</p>
+      </div>
+      <a href="https://kobo.unocha.org/x/aTX9v7VgZdAbYfKozHV4dN" target="_blank" rel="noopener">Abrir formulario Kobo</a>
+    </section>
+
     <section class="filters" aria-label="Filtros del tablero">
       <label class="wide">Buscar
         <input id="searchInput" type="search" placeholder="Buscar por título, organización, sector, estado, municipio..." />
@@ -60,6 +73,13 @@
     <section class="panel full">
       <div class="panel-header"><h2>Detalle del assessment registry</h2><div class="table-actions"><span id="rowCount">0 registros</span><button id="exportBtn" type="button">Exportar CSV filtrado</button></div></div>
       <div class="table-wrap"><table id="registryTable"><thead><tr><th data-sort="titulo">Título</th><th data-sort="organizacion">Organización</th><th data-sort="estado_evaluacion">Estado</th><th data-sort="fecha_evaluacion">Fecha</th><th>Sectores</th><th>Estado</th><th>Reporte</th></tr></thead><tbody></tbody></table></div>
+      <div class="bottom-cta">
+        <div>
+          <strong>¿Falta alguna evaluación?</strong>
+          <span>Ayude a mantener actualizado el Assessment Registry registrando nuevas evaluaciones o actualizando las existentes.</span>
+        </div>
+        <a href="https://kobo.unocha.org/x/aTX9v7VgZdAbYfKozHV4dN" target="_blank" rel="noopener">Registrar evaluación</a>
+      </div>
     </section>
   </main>
 

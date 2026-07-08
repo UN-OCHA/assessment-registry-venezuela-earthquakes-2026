@@ -35,3 +35,17 @@ La versión anterior buscaba etiquetas del CSV exportado, por eso los registros 
 ## Endpoint
 
 `https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json`
+
+
+## Versión con Call To Action para socios
+
+Esta versión añade varios llamados a la acción para que los socios reporten información:
+
+- Botón principal en el encabezado: `Registrar una evaluación`.
+- Botón flotante: `+ Registrar evaluación`.
+- Banner operativo bajo el encabezado.
+- Mensaje de CTA cuando los filtros no devuelven resultados.
+- CTA debajo de la tabla.
+
+Formulario usado:
+`https://kobo.unocha.org/x/aTX9v7VgZdAbYfKozHV4dN`

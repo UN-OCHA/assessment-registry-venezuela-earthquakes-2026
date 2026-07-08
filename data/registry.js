@@ -5,7 +5,7 @@ window.REGISTRY_PAYLOAD = {
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
     "ultimo_registro_publicado": "2026-07-08",
-    "generado": "2026-07-08T19:05:50Z",
+    "generado": "2026-07-08T19:03:00Z",
     "registros": 20
   },
   "records": [
@@ -18,7 +18,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "Ninguna",
       "estado_evaluacion": "En curso",
       "frecuencia": "Evaluación única",
-      "nivel_cobertura": "Municipio",
+      "nivel_cobertura": "Admin 2 (Municipio)",
       "fecha_evaluacion": "2026-06-30",
       "fecha_fin_estimada": "",
       "fecha_envio": "2026-06-30",
@@ -36,15 +36,15 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Distrito Capital",
-          "municipio": "VE0101"
+          "municipio": "Libertador"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1503"
+          "municipio": "Baruta"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1507"
+          "municipio": "Chacao"
         }
       ],
       "admin3": [],
@@ -66,7 +66,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "FUDEP",
       "estado_evaluacion": "En curso",
       "frecuencia": "Diaria",
-      "nivel_cobertura": "Estado",
+      "nivel_cobertura": "Admin 1 (Estado)",
       "fecha_evaluacion": "2026-06-30",
       "fecha_fin_estimada": "",
       "fecha_envio": "2026-06-30",
@@ -133,7 +133,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "Estamos coordinando con nuestros socios locales.",
       "estado_evaluacion": "Planificado",
       "frecuencia": "Mensual",
-      "nivel_cobertura": "Estado",
+      "nivel_cobertura": "Admin 1 (Estado)",
       "fecha_evaluacion": "2026-07-15",
       "fecha_fin_estimada": "",
       "fecha_envio": "2026-06-30",
@@ -165,7 +165,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "Acción Solidaria Convite Proyecto SUMA SWW",
       "estado_evaluacion": "En curso",
       "frecuencia": "Evaluación única",
-      "nivel_cobertura": "Municipio",
+      "nivel_cobertura": "Admin 2 (Municipio)",
       "fecha_evaluacion": "2026-06-29",
       "fecha_fin_estimada": "",
       "fecha_envio": "2026-06-30",
@@ -183,211 +183,211 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Distrito Capital",
-          "municipio": "VE0101"
+          "municipio": "Libertador"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0503"
+          "municipio": "Girardot"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0504"
+          "municipio": "José Angel Lamas"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0507"
+          "municipio": "Libertador"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0508"
+          "municipio": "Mario Briceño Iragorry"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0513"
+          "municipio": "Sucre"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0514"
+          "municipio": "Tovar"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0515"
+          "municipio": "Urdaneta"
         },
         {
           "estado": "Aragua",
-          "municipio": "VE0516"
+          "municipio": "Zamora"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0801"
+          "municipio": "Bejuma"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0803"
+          "municipio": "Diego Ibarra"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0804"
+          "municipio": "Guacara"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0806"
+          "municipio": "Libertador"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0807"
+          "municipio": "Los Guayos"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0810"
+          "municipio": "Naguanagua"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0811"
+          "municipio": "Puerto Cabello"
         },
         {
           "estado": "Carabobo",
-          "municipio": "VE0812"
+          "municipio": "San Diego"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1501"
+          "municipio": "Acevedo"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1502"
+          "municipio": "Andrés Bello"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1503"
+          "municipio": "Baruta"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1504"
+          "municipio": "Brión"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1505"
+          "municipio": "Buroz"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1506"
+          "municipio": "Carrizal"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1507"
+          "municipio": "Chacao"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1508"
+          "municipio": "Cristóbal Rojas"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1509"
+          "municipio": "El Hatillo"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1510"
+          "municipio": "Bolivariano Guaicaipuro"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1511"
+          "municipio": "Independencia"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1512"
+          "municipio": "Lander"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1513"
+          "municipio": "Los Salias"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1514"
+          "municipio": "Páez"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1515"
+          "municipio": "Paz Castillo"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1516"
+          "municipio": "Pedro Gual"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1517"
+          "municipio": "Plaza"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1518"
+          "municipio": "Simón Bolívar"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1519"
+          "municipio": "Sucre"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1520"
+          "municipio": "Urdaneta"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1521"
+          "municipio": "Zamora"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2201"
+          "municipio": "Arístides Bastidas"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2202"
+          "municipio": "Bolívar"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2203"
+          "municipio": "Bruzual"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2204"
+          "municipio": "Cocorote"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2205"
+          "municipio": "Independencia"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2206"
+          "municipio": "José Antonio Páez"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2207"
+          "municipio": "La Trinidad"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2208"
+          "municipio": "Manuel Monge"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2209"
+          "municipio": "Nirgua"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2210"
+          "municipio": "Peña"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2211"
+          "municipio": "San Felipe"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2212"
+          "municipio": "Sucre"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2213"
+          "municipio": "Urachiche"
         },
         {
           "estado": "Yaracuy",
-          "municipio": "VE2214"
+          "municipio": "Veroes"
         }
       ],
       "admin3": [],
@@ -472,7 +472,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "Proyecto Tadeo",
       "estado_evaluacion": "En curso",
       "frecuencia": "Otra (especificar)",
-      "nivel_cobertura": "community",
+      "nivel_cobertura": "Parroquia",
       "fecha_evaluacion": "2026-06-30",
       "fecha_fin_estimada": "",
       "fecha_envio": "2026-07-01",
@@ -488,14 +488,14 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Distrito Capital",
-          "municipio": "VE0101"
+          "municipio": "Libertador"
         }
       ],
       "admin3": [
-        "VE010107",
-        "VE010115",
-        "VE010119",
-        "VE010120"
+        "El Junquito",
+        "San Bernandino",
+        "Santa Rosalía",
+        "Santa Teresa"
       ],
       "detalle_cobertura": "",
       "tiene_datos": false,
@@ -546,7 +546,7 @@ window.REGISTRY_PAYLOAD = {
       "titulo": "Evaluación rápida de necesiades con enfoque inclusivo",
       "organizacion": "Humanity and Inclusion",
       "agencia_lider": "Humanity and Inclusion",
-      "organizaciones_participantes": "N/A",
+      "organizaciones_participantes": "",
       "estado_evaluacion": "Completado",
       "frecuencia": "Evaluación única",
       "nivel_cobertura": "Toda el área afectada",
@@ -616,7 +616,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "FUNDANA",
       "estado_evaluacion": "Completado",
       "frecuencia": "Evaluación única",
-      "nivel_cobertura": "Municipio",
+      "nivel_cobertura": "Admin 2 (Municipio)",
       "fecha_evaluacion": "2026-06-25",
       "fecha_fin_estimada": "2026-06-30",
       "fecha_envio": "2026-07-02",
@@ -630,11 +630,11 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Distrito Capital",
-          "municipio": "VE0101"
+          "municipio": "Libertador"
         },
         {
           "estado": "La Guaira",
-          "municipio": "VE2401"
+          "municipio": "Vargas"
         }
       ],
       "admin3": [],
@@ -656,7 +656,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "HI",
       "estado_evaluacion": "En curso",
       "frecuencia": "Diaria",
-      "nivel_cobertura": "Municipio",
+      "nivel_cobertura": "Admin 2 (Municipio)",
       "fecha_evaluacion": "2026-06-30",
       "fecha_fin_estimada": "2026-06-30",
       "fecha_envio": "2026-07-02",
@@ -672,7 +672,7 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Miranda",
-          "municipio": "VE1517"
+          "municipio": "Plaza"
         }
       ],
       "admin3": [],
@@ -708,11 +708,11 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Distrito Capital",
-          "municipio": "VE0101"
+          "municipio": "Libertador"
         }
       ],
       "admin3": [
-        "VE010121"
+        "Sucre"
       ],
       "detalle_cobertura": "Escuela Miguel Antonio Caro - Parque del Oeste (Parque Alí Primera)",
       "tiene_datos": false,
@@ -748,11 +748,11 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Miranda",
-          "municipio": "VE1519"
+          "municipio": "Sucre"
         }
       ],
       "admin3": [
-        "VE151901"
+        "Petare"
       ],
       "detalle_cobertura": "Coliseo de Petare",
       "tiene_datos": false,
@@ -772,7 +772,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "",
       "estado_evaluacion": "Completado",
       "frecuencia": "Evaluación única",
-      "nivel_cobertura": "Estado",
+      "nivel_cobertura": "Admin 1 (Estado)",
       "fecha_evaluacion": "2026-06-30",
       "fecha_fin_estimada": "2026-06-30",
       "fecha_envio": "2026-07-03",
@@ -869,7 +869,7 @@ window.REGISTRY_PAYLOAD = {
       "organizaciones_participantes": "Acción Solidaria SWW Proyecto SUMA CONVITE",
       "estado_evaluacion": "Completado",
       "frecuencia": "Evaluación única",
-      "nivel_cobertura": "community",
+      "nivel_cobertura": "Parroquia",
       "fecha_evaluacion": "2026-06-29",
       "fecha_fin_estimada": "",
       "fecha_envio": "2026-07-07",
@@ -925,27 +925,27 @@ window.REGISTRY_PAYLOAD = {
       "admin2": [
         {
           "estado": "Distrito Capital",
-          "municipio": "VE0101"
+          "municipio": "Libertador"
         },
         {
           "estado": "Miranda",
-          "municipio": "VE1519"
+          "municipio": "Sucre"
         },
         {
           "estado": "La Guaira",
-          "municipio": "VE2401"
+          "municipio": "Vargas"
         }
       ],
       "admin3": [
-        "VE010101",
-        "VE010105",
-        "VE010107",
-        "VE010111",
-        "VE010117",
-        "VE010120",
-        "VE151905",
-        "VE240101",
-        "VE240106"
+        "Altagracia",
+        "Catedral",
+        "El Junquito",
+        "La Pastora",
+        "San Juan",
+        "Santa Teresa",
+        "Leoncio Martínez",
+        "Caraballeda",
+        "La Guaira"
       ],
       "detalle_cobertura": "La metodología implementada contempló un enfoque mixto (cuantitativo-cualitativo) estructurado en cinco componentes de recolección que consolidan cuatro estudios complementarios. Entre el 2 y 3 de julio de 2026 se encuestó a 17 informantes clave a cargo de la gestión o voluntariado de 17 refugios distribuidos en los estados Distrito Capital (11 centros), La Guaira (5 centros) y Miranda (1 centro) mediante un instrumento digitalizado en KoboToolbox complementado con observación directa. Este levantamiento se integró con la evaluación rápida de necesidades a nivel de hogares desarrollada por FLM el 27 y 28 de junio (19 hogares en 15 comunidades de La Guaira, Aragua y Miranda, más observación estructurada en 7 ubicaciones de cuatro estados), con los datos de atención médica en terreno generados por PALUZ el 29 de junio en el estado La Guaira, donde se evaluó aproximadamente 200 personas, y con un análisis de fuentes documentales conducido por COOPI sobre el impacto en infraestructura crítica, conectividad, sistema de salud y mercados.",
       "tiene_datos": false,
