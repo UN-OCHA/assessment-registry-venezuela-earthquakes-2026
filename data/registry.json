@@ -4,9 +4,9 @@
     "subtitulo": "Assessment Registry | Respuesta Humanitaria",
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
-    "ultimo_registro_publicado": "2026-07-08",
-    "generado": "2026-07-09T13:33:19Z",
-    "registros": 20
+    "ultimo_registro_publicado": "2026-07-09",
+    "generado": "2026-07-09T15:04:22Z",
+    "registros": 21
   },
   "records": [
     {
@@ -955,6 +955,419 @@
       "nombre_reporte": "RNA Consorcio ïntegras (1)-10_2_46.pdf",
       "metodologia": "",
       "notas": "El levantamiento de información se estructuró en 5 componentes: 1. La encuesta a informantes clave de refugios, aplicada por COOPI, HIAS y PLAFAM ; 2. Observación directa de las 5 organizaciones miembros del Consorcio; 3. Encuestas a hogares afectados y comunidades, llevado a cabo por FLM; 4. Datos derivados de la atención directa en salud generados por PALUZ y 5. el análisis de fuentes documentales conducido por COOPI sobre el impacto en infraestructura crítica, conectividad, sistema de salud y mercados. Hallazgos: 1. La infancia concentra el peso de la emergencia: los niños, niñas y adolescentes representan alrededor del 43% de la población afectada, tanto en los refugios como en los hogares encuestados. Están en espacios sin estándares mínimos de protección. Solo el 29% de los refugios tiene baños separados por sexo, la pernocta nocturna carece de iluminación y personal de salvaguarda, y se registran casos consumados de violencia de género (41% de los refugios) e incidentes donde voluntarios debieron intervenir para frustrar agresiones sexuales contra NNA. El monitoreo público de CECODAP documenta además 123 NNA reportados como desaparecidos y evidencia de separación familiar. 2. Los pacientes crónicos se quedaron sin tratamiento: el 82% de los refugios alberga personas con hipertensión, diabetes o cáncer sin continuidad de tratamiento, la medicación crónica es la necesidad de salud más citada por los hogares, y el sistema hospitalario (saturado y bajo triaje restrictivo) no podrá absorberlos en el corto plazo. 3. Fuera de los refugios, la respuesta no está llegando: dos de cada tres hogares afectados ya no duermen en su vivienda, pero la mayoría no está en refugios formales. Se aloja con familiares, junto a sus casas dañadas o a la intemperie. Solo el 32% había recibido alguna ayuda (casi toda de vecinos y familiares) y ninguno había sido contactado por una organización humanitaria formal. El 53% perdió por completo sus ingresos, en un mercado que hoy exige efectivo o divisas y excluye a quienes no los tienen. 4. La población se está moviendo, y la asistencia no la sigue: familias de Caraballeda se desplazan hacia las zonas altas de San Julián por temor a las réplicas, alejándose de hospitales y puntos de distribución. La priorización territorial identifica a Urimare (La Guaira) en gravedad crítica y a Coromoto y Urb. El Centro (Aragua) en gravedad severa, con parroquias enteras de Caraballeda, Macuto y Carlos Soublette sin cobertura médica. 5. Sin información, no hay acceso a la asistencia: el 79% de los hogares no había recibido información oficial alguna desde el terremoto y el 84% se encontró con información falsa o contradictoria; solo el 11% confía en quienes gestionan la respuesta. La brecha de comunicación es hoy una barrera de acceso tan concreta como la falta de agua. Necesidades/Recomendaciones: 1.Extender la respuesta más allá de los refugios. Estrategias de búsqueda activa y equipos móviles para la población alojada con familiares, en viviendas dañadas y asentamientos improvisados, priorizando Urimare, Coromoto, Urb. El Centro y las parroquias sin cobertura médica de La Guaira. 2.Agua, saneamiento e higiene como primera línea de salud pública. Potabilización y distribución urgente de agua segura, puntos de lavado de manos, letrinas de emergencia y baños diferenciados por sexo, para contener un riesgo epidémico que ya se manifiesta. 3. Garantizar la cadena de medicamentos crónicos y la salud móvil. Unidades de salud móviles con servicios de salud sexual y reproductiva, y suministro sostenido de tratamientos para pacientes crónicos hacia refugios y zonas de desplazamiento secundario, en articulación con el Clúster de Salud. 4.Poner la protección en el centro de la gestión de albergues. Estándares mínimos de protección e iluminación en refugios y campamentos transitorios, espacios seguros para NNA, formación en PEAS para funcionarios y voluntarios, restablecimiento de contacto familiar y reposición expedita de documentos de identidad (SAIME, IDENNA). 5.Comunicar con las comunidades y gestionar los rumores. Canales confiables que informen dónde están los servicios, cómo registrarse para recibir asistencia y cuál es la información oficial sobre réplicas y seguridad de las edificaciones. 6.Financiamiento flexible y acceso humanitario oportuno. Canalizar con celeridad los recursos activados (CERF, Fondo Humanitario de Venezuela) hacia la respuesta complementaria dentro y fuera de los refugios, incorporar asistencia monetaria multipropósito donde los mercados recuperen funcionalidad, y facilitar los procedimientos administrativos y de acceso del personal humanitario."
+    },
+    {
+      "id": "b866f7fb-6360-4fa6-82c6-a91007a9af98",
+      "indice": "21",
+      "titulo": "Análisis de Necesidades Nutricionales | Terremoto Venezuela 2026",
+      "organizacion": "Cluster de Nutrición",
+      "agencia_lider": "Cluster de Nutrición",
+      "organizaciones_participantes": "ACH ACURN La Casa Grande ADRA AVEC AVESSOC AVSI CAJ CANIA Caritas VEN CEDISUC CEPOREJUN CESAP CICR CIR CONVITE DVC Emb Alemania ENCILUZ Fe y Alegria FPM FUDEP Fundación Privada Techo Fundacorazón FundAFID FUNDAINIL FUNDANA IBFAN Ven IMC M4H MdM Spain ODISEF OOT OPS PALUZ PMA Prepara Familia Proyecto Esperanza PUI Red de Nutrición LARA REDISALUD RET SC UNICEF VDTM WV Venezuela",
+      "estado_evaluacion": "En curso",
+      "frecuencia": "Evaluación única",
+      "nivel_cobertura": "Municipio",
+      "fecha_evaluacion": "2026-07-03",
+      "fecha_fin_estimada": "2026-07-31",
+      "fecha_envio": "2026-07-09",
+      "sectores": [
+        "Nutrición"
+      ],
+      "admin1": [
+        "Distrito Capital",
+        "Aragua",
+        "Carabobo",
+        "Falcón",
+        "Miranda",
+        "Yaracuy",
+        "La Guaira"
+      ],
+      "admin2": [
+        {
+          "estado": "Distrito Capital",
+          "municipio": "VE0101"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0501"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0502"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0503"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0504"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0505"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0506"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0507"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0508"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0509"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0510"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0511"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0512"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0513"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0514"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0515"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0516"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0517"
+        },
+        {
+          "estado": "Aragua",
+          "municipio": "VE0518"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0801"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0802"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0803"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0804"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0805"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0806"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0807"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0808"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0809"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0810"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0811"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0812"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0813"
+        },
+        {
+          "estado": "Carabobo",
+          "municipio": "VE0814"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1101"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1102"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1103"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1104"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1105"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1106"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1107"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1108"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1109"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1110"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1111"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1112"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1113"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1114"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1115"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1116"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1117"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1118"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1119"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1120"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1121"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1122"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1123"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1124"
+        },
+        {
+          "estado": "Falcón",
+          "municipio": "VE1125"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1501"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1502"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1503"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1504"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1505"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1506"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1507"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1508"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1509"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1510"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1511"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1512"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1513"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1514"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1515"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1516"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1517"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1518"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1519"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1520"
+        },
+        {
+          "estado": "Miranda",
+          "municipio": "VE1521"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2201"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2202"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2203"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2204"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2205"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2206"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2207"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2208"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2209"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2210"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2211"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2212"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2213"
+        },
+        {
+          "estado": "Yaracuy",
+          "municipio": "VE2214"
+        },
+        {
+          "estado": "La Guaira",
+          "municipio": "VE2401"
+        }
+      ],
+      "admin3": [],
+      "detalle_cobertura": "El proceso de recolección de datos se realiza actualmente en conjunto con los miembros del clúster. Si bien se seleccionaron todos los municipios en el formulario para habilitar la opción de reporte, esto no implica que la evaluación esté finalizada para la totalidad de ellos; el proceso se encuentra actualmente en curso.",
+      "tiene_datos": false,
+      "url_datos": "",
+      "tiene_reporte": false,
+      "url_reporte": "",
+      "nombre_reporte": "",
+      "metodologia": "",
+      "notas": "Una vez tengamos un poco de data recolectada, le compartiremos los datos"
     }
   ]
 }
