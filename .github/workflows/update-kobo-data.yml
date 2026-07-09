@@ -1,20 +1,27 @@
-name: Update Kobo registry data
+name: Update Kobo Registry Data
 
 on:
   workflow_dispatch:
+
   schedule:
-    # Runs every 30 minutes. Adjust if needed.
     - cron: "*/30 * * * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: kobo-registry-update
+  cancel-in-progress: false
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,10 +32,42 @@ jobs:
         env:
           KOBO_API_TOKEN: ${{ secrets.KOBO_API_TOKEN }}
           KOBO_API_URL: https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json
-        run: python scripts/fetch_kobo.py
+        run: |
+          python scripts/fetch_kobo.py
 
-      - name: Commit updated data files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update assessment registry data from Kobo"
-          file_pattern: data/registry.json data/registry.js
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add data/registry.json data/registry.js
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git commit -m "Update assessment registry data from Kobo"
+
+      - name: Rebase against latest main
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git fetch origin main
+          git pull --rebase origin main
+
+      - name: Push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git push origin HEAD:main
+
+      - name: No changes detected
+        if: steps.changes.outputs.changed == 'false'
+        run: |
+          echo "No data changes found"
