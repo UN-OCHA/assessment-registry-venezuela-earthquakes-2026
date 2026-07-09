@@ -5,8 +5,8 @@ window.REGISTRY_PAYLOAD = {
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
     "ultimo_registro_publicado": "2026-07-09",
-    "generado": "2026-07-09T15:07:26Z",
-    "registros": 21
+    "generado": "2026-07-09T16:19:43Z",
+    "registros": 22
   },
   "records": [
     {
@@ -1368,6 +1368,46 @@ window.REGISTRY_PAYLOAD = {
       "nombre_reporte": "",
       "metodologia": "",
       "notas": "Una vez tengamos un poco de data recolectada, le compartiremos los datos"
+    },
+    {
+      "id": "8a61235e-743f-4487-82ad-8f4a9c598af1",
+      "indice": "22",
+      "titulo": "Evaluación rápida de criaderos de vectores y salud ambiental #01",
+      "organizacion": "The MENTOR Initiative",
+      "agencia_lider": "The MENTOR Initiative",
+      "organizaciones_participantes": "",
+      "estado_evaluacion": "Completado",
+      "frecuencia": "Evaluación única",
+      "nivel_cobertura": "community",
+      "fecha_evaluacion": "2026-07-08",
+      "fecha_fin_estimada": "",
+      "fecha_envio": "2026-07-09",
+      "sectores": [
+        "Salud",
+        "Agua, Saneamiento e Higiene (WASH)"
+      ],
+      "admin1": [
+        "La Guaira"
+      ],
+      "admin2": [
+        {
+          "estado": "La Guaira",
+          "municipio": "VE2401"
+        }
+      ],
+      "admin3": [
+        "VE240104",
+        "VE240110",
+        "VE240111"
+      ],
+      "detalle_cobertura": "Comunidad y campamento temporal de Las Marinas (Catamare), Campamento temporal Farmatodo Catia La Mar, Comunidad y campamento temporal Playa Verde, Comunidad y campamento temporal Mare Abajo, Comunidad 10 de Marzo y Centro de Salud 10 de Marzo.",
+      "tiene_datos": false,
+      "url_datos": "",
+      "tiene_reporte": true,
+      "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1413919/attachments/att5vo6uzSXNSuXj972jPRGG/",
+      "nombre_reporte": "MENTOR Assessment vectors 20260708-12_5_13.pdf",
+      "metodologia": "",
+      "notas": ""
     }
   ]
 };
