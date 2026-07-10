@@ -4,9 +4,9 @@ window.REGISTRY_PAYLOAD = {
     "subtitulo": "Assessment Registry | Respuesta Humanitaria",
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
-    "ultimo_registro_publicado": "2026-07-09",
-    "generado": "2026-07-09T23:33:06Z",
-    "registros": 22
+    "ultimo_registro_publicado": "2026-07-10",
+    "generado": "2026-07-10T00:42:48Z",
+    "registros": 24
   },
   "records": [
     {
@@ -1406,6 +1406,86 @@ window.REGISTRY_PAYLOAD = {
       "tiene_reporte": true,
       "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1413919/attachments/att5vo6uzSXNSuXj972jPRGG/",
       "nombre_reporte": "MENTOR Assessment vectors 20260708-12_5_13.pdf",
+      "metodologia": "",
+      "notas": ""
+    },
+    {
+      "id": "a9c9763e-e6d3-4658-8dcb-36a9aa3470ad",
+      "indice": "23",
+      "titulo": "Evaluación rápida Naiguatá y Tanaguarena",
+      "organizacion": "Cruz Roja Española",
+      "agencia_lider": "Cruz Roja Venezolana y Española",
+      "organizaciones_participantes": "",
+      "estado_evaluacion": "Completado",
+      "frecuencia": "Evaluación única",
+      "nivel_cobertura": "community",
+      "fecha_evaluacion": "2026-07-08",
+      "fecha_fin_estimada": "2026-07-08",
+      "fecha_envio": "2026-07-10",
+      "sectores": [
+        "Salud",
+        "Agua, Saneamiento e Higiene (WASH)",
+        "Otro"
+      ],
+      "admin1": [
+        "La Guaira"
+      ],
+      "admin2": [
+        {
+          "estado": "La Guaira",
+          "municipio": "VE2401"
+        }
+      ],
+      "admin3": [
+        "VE240101",
+        "VE240109"
+      ],
+      "detalle_cobertura": "",
+      "tiene_datos": false,
+      "url_datos": "",
+      "tiene_reporte": true,
+      "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1415333/attachments/atth6FHMFeNWnebnHvKPrSUL/",
+      "nombre_reporte": "Reporte_Visita_Terreno_Naiguatá_Tainaguarena_ESPAÑOL-20_31_52.pdf",
+      "metodologia": "",
+      "notas": ""
+    },
+    {
+      "id": "5f9ead1b-ce63-466d-9ae4-ac8a4ddfee8a",
+      "indice": "24",
+      "titulo": "Evaluación rápida Playa Verde",
+      "organizacion": "Cruz Roja Española",
+      "agencia_lider": "Cruz Roja Venezolana y Española",
+      "organizaciones_participantes": "",
+      "estado_evaluacion": "Completado",
+      "frecuencia": "Evaluación única",
+      "nivel_cobertura": "community",
+      "fecha_evaluacion": "2026-07-09",
+      "fecha_fin_estimada": "2026-07-09",
+      "fecha_envio": "2026-07-10",
+      "sectores": [
+        "Salud",
+        "Protección",
+        "Agua, Saneamiento e Higiene (WASH)",
+        "Otro"
+      ],
+      "admin1": [
+        "La Guaira"
+      ],
+      "admin2": [
+        {
+          "estado": "La Guaira",
+          "municipio": "VE2401"
+        }
+      ],
+      "admin3": [
+        "VE240110"
+      ],
+      "detalle_cobertura": "",
+      "tiene_datos": false,
+      "url_datos": "",
+      "tiene_reporte": true,
+      "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1415339/attachments/attwR7uCoohDpHpMMoP3BYjt/",
+      "nombre_reporte": "Informe de evaluacion Playa Verde-20_35_50.pdf",
       "metodologia": "",
       "notas": ""
     }
