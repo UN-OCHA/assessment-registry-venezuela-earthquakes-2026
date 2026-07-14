@@ -4,9 +4,9 @@ window.REGISTRY_PAYLOAD = {
     "subtitulo": "Assessment Registry | Respuesta Humanitaria",
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
-    "ultimo_registro_publicado": "2026-07-10",
-    "generado": "2026-07-14T21:48:45Z",
-    "registros": 25
+    "ultimo_registro_publicado": "2026-07-14",
+    "generado": "2026-07-14T21:51:13Z",
+    "registros": 26
   },
   "records": [
     {
@@ -1532,6 +1532,51 @@ window.REGISTRY_PAYLOAD = {
       "tiene_reporte": true,
       "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1416801/attachments/att7jZV7icoKUFckidSdaiHJ/",
       "nombre_reporte": "Acciones de Concentroccidente-10_38_33.pdf",
+      "metodologia": "",
+      "notas": ""
+    },
+    {
+      "id": "d2432d0f-9194-4ed5-a412-2f15828576a4",
+      "indice": "26",
+      "titulo": "Evaluación rápida WASH FIT simplificada 11 centros de salud de La Guaira",
+      "organizacion": "The MENTOR Initiative",
+      "agencia_lider": "The MENTOR Initiative",
+      "organizaciones_participantes": "",
+      "estado_evaluacion": "Completado",
+      "frecuencia": "Evaluación única",
+      "nivel_cobertura": "community",
+      "fecha_evaluacion": "2026-07-09",
+      "fecha_fin_estimada": "",
+      "fecha_envio": "2026-07-14",
+      "sectores": [
+        "Salud",
+        "Agua, Saneamiento e Higiene (WASH)"
+      ],
+      "admin1": [
+        "La Guaira"
+      ],
+      "admin2": [
+        {
+          "estado": "La Guaira",
+          "municipio": "VE2401"
+        }
+      ],
+      "admin3": [
+        "VE240101",
+        "VE240103",
+        "VE240104",
+        "VE240106",
+        "VE240107",
+        "VE240109",
+        "VE240110",
+        "VE240111"
+      ],
+      "detalle_cobertura": "CDI Dora Mercedes Gonzalez / Atlantida Ambulatorio Jacinto Plaza / El Mamo Hospital de Emergencia Naiguata Hospital Jose Maria Espana – La Sabana Maternidad Ana Teresa de Jesus Ponce / Macuto CDI 10 de Marzo Sanidad Consultorio Medico Popular Playa Verde CDI Guaracarumbo Ambulatorio Carlos Soublette Centro Integral Salud Macuto - Hugo Chavez",
+      "tiene_datos": false,
+      "url_datos": "",
+      "tiene_reporte": false,
+      "url_reporte": "",
+      "nombre_reporte": "",
       "metodologia": "",
       "notas": ""
     }
