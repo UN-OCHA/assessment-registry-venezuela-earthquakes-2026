@@ -4,9 +4,9 @@ window.REGISTRY_PAYLOAD = {
     "subtitulo": "Assessment Registry | Respuesta Humanitaria",
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
-    "ultimo_registro_publicado": "2026-07-14",
-    "generado": "2026-07-20T19:09:50Z",
-    "registros": 26
+    "ultimo_registro_publicado": "2026-07-20",
+    "generado": "2026-07-20T20:03:46Z",
+    "registros": 27
   },
   "records": [
     {
@@ -1577,6 +1577,35 @@ window.REGISTRY_PAYLOAD = {
       "tiene_reporte": false,
       "url_reporte": "",
       "nombre_reporte": "",
+      "metodologia": "",
+      "notas": ""
+    },
+    {
+      "id": "8d7c954c-aeda-4b51-aed0-59941f045b33",
+      "indice": "27",
+      "titulo": "Informe Misión exploratoria - Centro Occidente - SI",
+      "organizacion": "Solidarités International",
+      "agencia_lider": "Solidarités International",
+      "organizaciones_participantes": "Solidarités International",
+      "estado_evaluacion": "Completado",
+      "frecuencia": "Evaluación única",
+      "nivel_cobertura": "Toda el área afectada",
+      "fecha_evaluacion": "2026-07-06",
+      "fecha_fin_estimada": "2026-07-08",
+      "fecha_envio": "2026-07-20",
+      "sectores": [
+        "Salud",
+        "Agua, Saneamiento e Higiene (WASH)"
+      ],
+      "admin1": [],
+      "admin2": [],
+      "admin3": [],
+      "detalle_cobertura": "Estados ARAGUA, CARABOBO, FALCÓN",
+      "tiene_datos": false,
+      "url_datos": "",
+      "tiene_reporte": true,
+      "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1458704/attachments/attoPmizXNQgJnoAqXuHMpkM/",
+      "nombre_reporte": "SI_VEN_Informe_Mision-exploratoria_CentroOccidente_Emergencia-terremoto_10.07.26-15_43_52.pdf",
       "metodologia": "",
       "notas": ""
     }
