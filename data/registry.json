@@ -5,7 +5,7 @@
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
     "ultimo_registro_publicado": "2026-07-20",
-    "generado": "2026-07-20T21:53:02Z",
+    "generado": "2026-07-20T21:56:36Z",
     "registros": 27
   },
   "records": [
