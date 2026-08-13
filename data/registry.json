@@ -4,9 +4,9 @@
     "subtitulo": "Assessment Registry | Respuesta Humanitaria",
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
-    "ultimo_registro_publicado": "2026-07-25",
-    "generado": "2026-08-13T16:50:03Z",
-    "registros": 29
+    "ultimo_registro_publicado": "2026-08-13",
+    "generado": "2026-08-13T17:21:18Z",
+    "registros": 30
   },
   "records": [
     {
@@ -1687,6 +1687,34 @@
       "tiene_reporte": true,
       "url_reporte": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/1480325/attachments/attxkd7sxPnKSx8WtLJKX2sq/",
       "nombre_reporte": "Assessment environmental health v02-12_54_41.pdf",
+      "metodologia": "",
+      "notas": ""
+    },
+    {
+      "id": "6ba547e9-b84d-4b39-b8c2-f460c386bb62",
+      "indice": "30",
+      "titulo": "Test",
+      "organizacion": "Test",
+      "agencia_lider": "Test",
+      "organizaciones_participantes": "",
+      "estado_evaluacion": "En curso",
+      "frecuencia": "",
+      "nivel_cobertura": "Toda el área afectada",
+      "fecha_evaluacion": "",
+      "fecha_fin_estimada": "",
+      "fecha_envio": "2026-08-13",
+      "sectores": [
+        "Otro"
+      ],
+      "admin1": [],
+      "admin2": [],
+      "admin3": [],
+      "detalle_cobertura": "",
+      "tiene_datos": false,
+      "url_datos": "",
+      "tiene_reporte": false,
+      "url_reporte": "",
+      "nombre_reporte": "",
       "metodologia": "",
       "notas": ""
     }
