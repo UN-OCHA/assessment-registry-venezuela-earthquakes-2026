@@ -5,7 +5,7 @@ window.REGISTRY_PAYLOAD = {
     "fuente": "Registro de evaluaciones en Kobo.",
     "endpoint": "https://kobo.unocha.org/api/v2/assets/aTX9v7VgZdAbYfKozHV4dN/data/?format=json",
     "ultimo_registro_publicado": "2026-08-13",
-    "generado": "2026-09-19T03:41:25Z",
+    "generado": "2026-09-19T04:18:45Z",
     "registros": 30
   },
   "records": [
